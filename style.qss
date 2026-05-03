@@ -1,0 +1,65 @@
+/* Container Utama */
+QMainWindow, QDialog {
+    background-color: #000000;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Label */
+QLabel {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* =========================================
+   TABLE DARK MODE
+   ========================================= */
+
+QTableWidget {
+    background-color: #000000;
+    alternate-background-color: #111111;
+    border: 1px solid #333333;
+    gridline-color: #333333;
+    color: #ffffff; 
+}
+
+/* Header horizontal */
+QHeaderView::section:horizontal {
+    background-color: #111111;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px;
+    border: none;
+    border-right: 1px solid #333333;
+    border-bottom: 2px solid #444444;
+}
+
+/* Header vertical */
+QHeaderView::section:vertical {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    border-right: 1px solid #333333;
+}
+
+/* Isi tabel */
+QTableWidget::item {
+    color: #ffffff;
+    padding: 10px;
+}
+
+/* Corner button */
+QTableWidget QTableCornerButton::section {
+    background-color: #111111;
+    border: none;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+}
+
+/* Saat dipilih */
+QTableWidget::item:selected {
+    background-color: #1f2937;
+    color: #ffffff;
+}
